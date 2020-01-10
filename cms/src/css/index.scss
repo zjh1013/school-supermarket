@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .content-top {
+      width: 100%;
+      height: 70px;
+      background: #fafafa;
+      border-bottom: 1px solid #e8e8e8;
+      h1 {
+        width: 100%;
+        text-align: center;
+        line-height: 70px;
+        color: #1890ff;
+      }
+    }
+    .content-bottom {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .bottom-left {
+        width: 255px;
+        height: 100%;
+        overflow: auto;
+        background: #fff;
+      }
+      .bottom-right {
+        // background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578378174190&di=d9e14136e16b234d3a4035ae96643b88&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01954558ce35f5a801219c77fbfd9d.gif");
+        // background-repeat: no-repeat;
+        // background-size: 100% 100%;
+        // -moz-background-size: 100% 100%;
+        flex: 1;
+        height: 100%;
+        overflow: auto;
+        .imgs {
+          width: 180px;
+          height: 50px;
+          margin: 0 auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
